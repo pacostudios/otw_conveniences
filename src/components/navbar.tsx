@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BAG_ICON, CLOSE_ICON, Icon, LOCK_ICON, MENU_ICON } from "@/components/icons";
+import { BAG_ICON, CLOSE_ICON, Icon, MENU_ICON } from "@/components/icons";
 import { CATEGORIES } from "@/data/catalog";
 import { STORE } from "@/data/store";
 import { openCart, useCart } from "@/lib/cart";
@@ -122,13 +122,6 @@ export function Navbar() {
             </nav>
 
             <div className="flex shrink-0 items-center gap-3">
-              <Link
-                href="/admin"
-                className={`font-display hidden h-9 items-center gap-1.5 rounded-md border px-3.5 text-[10px] font-bold tracking-[0.08em] uppercase transition-colors xl:flex ${focusRing} ${secondaryButton}`}
-              >
-                <Icon path={LOCK_ICON} />
-                Admin
-              </Link>
               <button
                 type="button"
                 aria-label={`Open cart, ${itemCount} ${itemCount === 1 ? "item" : "items"}`}
@@ -183,16 +176,6 @@ export function Navbar() {
                     </li>
                   );
                 })}
-                <li>
-                  <Link
-                    href="/admin"
-                    onClick={closeMenu}
-                    className={`font-display my-0.5 flex w-fit items-center gap-2 border-b-2 py-2.5 text-xs font-bold tracking-[0.06em] uppercase ${focusRing} ${linkTone(false)}`}
-                  >
-                    <Icon path={LOCK_ICON} />
-                    Admin
-                  </Link>
-                </li>
               </ul>
             </nav>
           )}

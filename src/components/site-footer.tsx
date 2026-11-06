@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Icon, LOCK_ICON } from "@/components/icons";
 import { STORE, WHATSAPP_URL } from "@/data/store";
 
 const LINK = "transition-colors hover:text-stone-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-950";
@@ -51,13 +50,6 @@ export function SiteFooter() {
             <li>
               <Link href="/#why-us" className={LINK}>
                 Discreet Delivery
-              </Link>
-            </li>
-            <Separator />
-            <li>
-              <Link href="/admin" className={`flex items-center gap-1 ${LINK}`}>
-                <Icon path={LOCK_ICON} />
-                Admin
               </Link>
             </li>
           </ul>
