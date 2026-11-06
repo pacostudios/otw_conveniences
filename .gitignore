@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code local files
+/.claude/
+
+# Scraped source data, not used by the site
+/src/data/scraped_data_v2/

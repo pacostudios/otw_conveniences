@@ -8,8 +8,34 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: #bf2c11;
+  --color-promo: #f3f2ee;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-archivo);
+  --font-serif: var(--font-playfair);
+  --animate-fade-in: fade-in 0.7s ease-out var(--fade-delay, 0s) both;
+  --animate-slide-in: slide-in 0.25s ease-out;
+  --animate-spin-slow: spin-slow 20s linear infinite;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes spin-slow {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +49,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Stops the page scrolling behind the open cart. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
