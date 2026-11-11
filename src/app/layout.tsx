@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Archivo, Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { CartDrawer } from "@/components/cart-drawer";
-import { PromoBar } from "@/components/promo-bar";
 import { SiteFooter } from "@/components/site-footer";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { STORE } from "@/data/store";
@@ -43,7 +42,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${archivo.variable} ${playfair.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <PromoBar />
         <Navbar />
         {children}
         <SiteFooter />

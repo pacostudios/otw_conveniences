@@ -12,7 +12,7 @@ export function SiteFooter() {
     <footer className="border-t border-stone-200 bg-[#faf8f5] text-stone-950">
       <div aria-hidden="true" className="h-20 border-b border-stone-200" />
       {/* Extra padding keeps the floating WhatsApp button clear of the text. */}
-      <div className="mx-auto flex max-w-[1344px] flex-col gap-6 px-6 pt-10 pb-24 2xl:flex-row 2xl:items-center 2xl:justify-between 2xl:px-0 2xl:pb-10">
+      <div className="mx-auto flex max-w-[1344px] flex-col gap-6 px-6 py-10 2xl:flex-row 2xl:items-center 2xl:justify-between 2xl:px-0">
         <p className="font-display flex items-center gap-2.5 text-sm font-black uppercase [font-stretch:125%] sm:text-base">
           <span aria-hidden="true" className="size-2 shrink-0 rounded-[2px] bg-stone-950" />
           {STORE.name}
@@ -57,6 +57,12 @@ export function SiteFooter() {
 
         <p className="font-mono text-[9px] tracking-wide text-stone-500">
           © 2026 {STORE.name}. All rights reserved.
+        </p>
+      </div>
+
+      <div className="border-t border-stone-200">
+        <p className="mx-auto max-w-[1344px] px-6 pt-5 pb-24 text-center font-mono text-[10px] tracking-wide text-stone-500 2xl:px-0 2xl:pb-5">
+          This website is for demo purpose and just a show case website
         </p>
       </div>
     </footer>

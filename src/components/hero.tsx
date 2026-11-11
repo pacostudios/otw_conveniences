@@ -103,7 +103,7 @@ export function Hero() {
           {/* Negative margin lifts the badge so VAULT lines up with PURE. */}
           <div className="motion-safe:animate-fade-in flex flex-col [--fade-delay:300ms] lg:-mt-9 lg:items-end lg:text-right">
             <p className="w-fit rounded-sm border border-white/20 bg-stone-950/70 px-2.5 py-1 font-mono text-[9px] font-bold tracking-widest uppercase">
-              <span className="text-amber-300">Halloween Special Week</span> • All cigs $12/pack
+              All cigs $12/pack
             </p>
             <h2 className="mt-3">
               <span className={`block ${HEADLINE}`}>Vault</span>
@@ -125,9 +125,6 @@ export function Hero() {
       <div className="mx-auto flex max-w-[1600px] flex-col gap-8 px-6 py-8 lg:flex-row lg:items-center lg:justify-between 2xl:px-0">
         <div className="font-mono text-[10px] tracking-wide">
           <p className="flex flex-wrap items-center gap-x-2 gap-y-1 uppercase">
-            <span className="bg-stone-950 px-2 py-1 text-[9px] font-bold tracking-widest text-amber-300">
-              Halloween Week Special
-            </span>
             All cigs $12/pack • 2 cartons = $20 off
           </p>
           <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[11px]">

@@ -15,9 +15,6 @@ export function DealPanel() {
     <div className="grid divide-y divide-stone-200 rounded-sm border border-stone-200 bg-white lg:grid-cols-[5fr_4fr_3fr] lg:divide-x lg:divide-y-0">
       <div className="flex flex-col justify-between gap-8 p-6">
         <p className={`flex flex-wrap items-center gap-2 ${EYEBROW}`}>
-          <span className="border border-stone-300 bg-promo px-2 py-1 font-bold text-stone-900">
-            Halloween Week Offer
-          </span>
           All imported cigarettes
         </p>
         <div>
